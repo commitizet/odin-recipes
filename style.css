@@ -12,8 +12,6 @@ html {
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
-  min-height: 100dvh;
-  background: url(./food.jpg) center / cover no-repeat fixed;
 }
 
 .container {
@@ -21,7 +19,7 @@ body {
   margin-top: 30px;
   margin-inline: auto;
   border: 2px solid rgb(238, 181, 24);
-  background-color: rgba(209, 176, 145, .8);
+  background-color: rgb(235, 230, 227);
   border-radius: 1em;
   text-align: center;
 }
@@ -48,3 +46,50 @@ body {
 a {
   text-decoration: none;
 }
+
+.recipe-container {
+  padding: 2em;;
+}
+
+.recipe-container .homepage-link{
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+}
+
+.recipe-container img {
+  display: inline-block;
+  width: clamp(200px, 60%, 500px);
+}
+
+.recipe-title {
+  margin-block: 5px;
+}
+
+.recipe-creator {
+  margin-bottom: 30px;
+}
+
+.recipe-description {
+  text-align: justify;
+  margin-top: 30px;
+  line-height: 1.5rem;
+}
+
+.recipe-description h2:not(:first-of-type){
+  margin-top: 20px;
+}
+
+.recipe-description h2 {
+  margin-bottom: 1rem;
+}
+
+.recipe-description ul {
+  padding-left: 2em;
+  list-style-type: disc;
+}
+
+.recipe-description ul li{
+  padding-bottom: 0;
+}
+
